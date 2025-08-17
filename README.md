@@ -77,17 +77,13 @@ curl -X POST http://localhost:8080/create_event
 ```
 
 ```
-curl -X POST http://localhost:8080/create_event
--H "Content-Type: application/json"
--d '{"user_id":1,"date":"2025-08-20","text":"Встреча с семьей"}'
+curl -X POST http://localhost:8080/create_event -H "Content-Type: application/json" -d '{"user_id":1 "date":"2025-08-20","text":"Встреча с семьей"}'
 ```
 
 Запрос на обновление события:
 
 ```
-curl -X POST http://localhost:8080/update_event?user_id=1&event_id=1
--H "Content-Type: application/json"
--d '{"date":"2025-08-19","event":"Обновленная встреча"}'
+curl -X POST http://localhost:8080/update_event?user_id=1&event_id=1 -H "Content-Type: application/json" -d '{"date":"2025-08-19","event":"Обновленная встреча"}'
 ```
 
 Запрос на получение всех событий определенного дня:
