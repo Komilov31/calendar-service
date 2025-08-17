@@ -4,3 +4,5 @@ services:
     container_name: calendar
     ports:
       - "${PORT}:${PORT}"
+    volumes:
+      - logs/log.app:logs/log.app
