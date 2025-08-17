@@ -71,13 +71,11 @@ docker compose up
 Запрос на создание события:
 
 ```
-curl -X POST http://localhost:8080/create_event
--H "Content-Type: application/json"
--d '{"user_id":1,"date":"2025-08-18","text":"Встреча с командой"}'
+curl -X POST http://localhost:8080/create_event -H "Content-Type: application/json" -d '{"user_id":1,"date":"2025-08-18","text":"Встреча с командой"}'
 ```
 
 ```
-curl -X POST http://localhost:8080/create_event -H "Content-Type: application/json" -d '{"user_id":1 "date":"2025-08-20","text":"Встреча с семьей"}'
+curl -X POST http://localhost:8080/create_event -H "Content-Type: application/json" -d '{"user_id":1,"date":"2025-08-20","text":"Встреча с семьей"}'
 ```
 
 Запрос на обновление события:
