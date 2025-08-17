@@ -5,4 +5,4 @@ services:
     ports:
       - "${PORT}:${PORT}"
     volumes:
-      - ./logs/log.app:./logs/log.app
+      - ./logs/app.log:/logs/app.log
