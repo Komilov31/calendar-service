@@ -81,29 +81,29 @@ curl -X POST http://localhost:8080/create_event -H "Content-Type: application/js
 Запрос на обновление события:
 
 ```
-curl -X POST http://localhost:8080/update_event?user_id=1&event_id=1 -H "Content-Type: application/json" -d '{"date":"2025-08-19","event":"Обновленная встреча"}'
+curl -X POST "http://localhost:8080/update_event?user_id=1&event_id=1" -H "Content-Type: application/json" -d '{"date":"2025-08-19","text":"Обновленная встреча"}'
 ```
 
 Запрос на получение всех событий определенного дня:
 
 ```
-curl -X GET http://localhost:8080/events_for_day?user_id=1&date=2025-08-19
+curl -X GET "http://localhost:8080/events_for_day?user_id=1&date=2025-08-19"
 ```
 
 Запрос на получение всех событий определенной недели к которому пренадлежит эта дата:
 
 ```
-curl -X GET http://localhost:8080/events_for_week?user_id=1&date=2025-08-19
+curl -X GET "http://localhost:8080/events_for_week?user_id=1&date=2025-08-19"
 ```
 
 Запрос на получение всех событий определенного месяца к которому пренадлежит эта дата:
 
 ```
-curl -X GET http://localhost:8080/events_for_month?user_id=1&date=2025-08-19
+curl -X GET "http://localhost:8080/events_for_month?user_id=1&date=2025-08-19"
 ```
 
 Запрос на удаление события:
 
 ```
-curl -X POST http://localhost:8080/delete_event?user_id=1&event_id=1
+curl -X POST "http://localhost:8080/delete_event?user_id=1&event_id=1"
 ```
